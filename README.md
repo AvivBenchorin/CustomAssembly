@@ -20,7 +20,7 @@ Usage of `CustomAssembly` is as follows:
 	python CustomAssembly.py [-h] -i <input> -o <output> -c <config> -m <microbial> -d <deleted>
 		
 		<input>
-			input file in FASTA format (with sequence naming "contig_<sequence name>") 
+			input file in FASTA format (with sequence naming format of "contig_<sequence name>") 
 			containing sequences that will be processed
 		<output>
 			output file in FASTA format containing processed sequences,
@@ -47,14 +47,13 @@ that can be done on the assembly, each on a new line, and which sequences should
 The operations are as follows:
 
 	d: delete - all specified contigs are removed from the main output file and outputted to the <deleted> file.
-        	format: d:<contig name>,<contig name>,...
-    	i: invert - all specified contigs get inverted (sequence gets reversed and inverted by base pair)
-        	format: i:<contig name>,<contig name>,...
-    	c: combine - all specified contigs get combined into one large sequence with name <new_contig_name> 
-	 in the given order, adding * to end of <contig name> indicates to invert that specific contig
-        	format: c:<new_contig_name>:<contig name>,<contig name>*,...
-    	m: microbial - all specified contigs are removed from the main output file outputted to the <microbial> file.
-        	format: m:<contig>,<contig>,...
+	    format: d:<contig name>,<contig name>,...
+    i: invert - all specified contigs get inverted (sequence gets reversed and inverted by base pair)
+        format: i:<contig name>,<contig name>,...
+    c: combine - all specified contigs get combined into one large sequence with name <new_contig_name> in the given order, adding * to end of <contig name> indicates to invert that specific contig
+        format: c:<new_contig_name>:<contig name>,<contig name>*,...
+    m: microbial - all specified contigs are removed from the main output file outputted to the <microbial> file.
+        format: m:<contig>,<contig>,...
 
 An example configuartion file would be:
 	
@@ -72,4 +71,4 @@ in the hundreds of megabases, and thus has only been tested with FASTA inputs wi
 Feel free to modify and/or build upon this code to fit your specific usage and needs.
 
 # License
-This porgram is licensed under the Apache License Version 2.0. A copy of the Apache 2.0 license can be found [here](https://github/AvivBenchorin/CustomAssembly/blob/master/LICENSE).
+This porgram is licensed under the Apache License Version 2.0. A copy of the Apache 2.0 license can be found [here](https://github/AvivBenchorin/CustomAssembly/blob/main/LICENSE).
