@@ -71,4 +71,4 @@ in the hundreds of megabases, and thus has only been tested with FASTA inputs wi
 Feel free to modify and/or build upon this code to fit your specific usage and needs.
 
 # License
-This porgram is licensed under the Apache License Version 2.0. A copy of the Apache 2.0 license can be found [here](https://github/AvivBenchorin/CustomAssembly/blob/main/LICENSE).
+This porgram is licensed under the Apache License Version 2.0. A copy of the Apache 2.0 license can be found [here](https://github.com/AvivBenchorin/CustomAssembly/blob/main/LICENSE).
