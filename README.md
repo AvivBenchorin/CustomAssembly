@@ -11,8 +11,8 @@ and a third output file containing specified DNA contigs to be removed from the 
 
 ### Input and ouput FASTA file formats
 For the FASTA input of CustomAssembly, the sequence names must be in the format of 
-"contig_<sequence name>" or "scaffold_<sequence name>" in order to properly be processed.
-As well, the FASTA outputs of CustomAssembly will output the sequences name as "contig_<sequence name>".
+"contig_{sequence name}" or "scaffold_{sequence name}" in order to properly be processed.
+As well, the FASTA outputs of CustomAssembly will output the sequences name as "contig_{sequence name}".
 
 ### Running the program
 Usage of `CustomAssembly` is as follows:
@@ -53,7 +53,7 @@ The operations are as follows:
     c: combine - all specified contigs get combined into one large sequence with name <new_contig_name> in the given order, adding * to end of <contig name> indicates to invert that specific contig
         format: c:<new_contig_name>:<contig name>,<contig name>*,...
     m: microbial - all specified contigs are removed from the main output file outputted to the <microbial> file.
-        format: m:<contig>,<contig>,...
+        format: m:<contig name>,<contig name>,...
 
 An example configuartion file would be:
 	
